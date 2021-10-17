@@ -7,11 +7,12 @@
     <title>Tailwind Website</title>
     <link rel="stylesheet" href="./tailwind.css" />
   </head>
-  <body class="w-screen flex flex-col">
-    <header class="">
-      <nav class="bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4">
-          <div class="flex justify-between">
+
+  <body class="w-screen grid-rows-2">
+    <header>
+      <nav class="bg-gray-100 absolute row-span-1">
+        <div class="w-screen mx-auto px-4 lg:px-10">
+          <div class="flex justify-between lg:justify-between">
             <!-- logo -->
             <div>
               <a
@@ -25,22 +26,16 @@
                   hover:text-black
                 "
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-10 w-10 mr-1 text-blue-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
-                  />
-                </svg>
-                <span class="font-bold">big books</span>
+                <img
+                  src="./img/medipad_logo.svg"
+                  alt="medipad logo"
+                  class="h-8 md:w-12"
+                />
               </a>
             </div>
             <!-- primary nav -->
             <div class="flex space-x-10">
-              <div class="hidden md:flex items-center space-x-3">
+              <div class="hidden lg:flex items-center space-x-5">
                 <a
                   href="#"
                   class="
@@ -48,8 +43,11 @@
                     px-1
                     text-gray-600
                     hover:text-black hover:font-bold
+                    transition
+                    ease-in
+                    duration-500
                   "
-                  >Comics</a
+                  >Introduction</a
                 >
                 <a
                   href="#"
@@ -59,40 +57,48 @@
                     text-gray-600
                     hover:text-black hover:font-bold
                   "
-                  >novels</a
+                  >Technical Background</a
+                >
+                <a
+                  href="#"
+                  class="
+                    py-5
+                    px-1
+                    text-gray-600
+                    hover:text-black hover:font-bold
+                  "
+                  >Case Studies</a
+                >
+                <a
+                  href="#"
+                  class="
+                    py-5
+                    px-1
+                    text-gray-600
+                    hover:text-black hover:font-bold
+                  "
+                  >Services</a
                 >
               </div>
             </div>
 
-            <!-- secondary nav -->
-            <div class="hidden md:flex items-center space-x-1">
-              <a href="#" class="py-5 px-3">Login</a>
-              <a
-                href="#"
-                class="
-                  py-2
-                  px-4
-                  bg-blue-600
-                  hover:bg-blue-200
-                  text-blue-200
-                  hover:text-blue-600
-                  rounded
-                  transition
-                  duration-300
-                "
-                >SignUp</a
-              >
-            </div>
-
             <!-- mobile button -->
-            <div class="md:hidden flex items-center">
-              <button class="mobile-menu-button">
+            <div class="flex items-center lg:hidden">
+              <button
+                class="
+                  mobile-menu-button
+                  border-2 border-blue-500 bg-white
+                  p-1
+                  rounded-full
+                  md:mr-5
+                "
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  class="h-7 w-7 md:h-10 md:w-10"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="blue"
                 >
                   <path
                     stroke-linecap="round"
@@ -106,32 +112,31 @@
           </div>
 
           <!-- mobile menu -->
-          <div class="mobile-menu hidden md:hidden">
+          <div
+            class="mobile-menu hidden lg:hidden transition ease-in duration-500"
+          >
             <a
               href="#"
               class="
                 block
                 py-3
                 px-4
-                text-sm text-center
-                hover:bg-gray-200
+                text-center
+                hover:bg-gray-200 hover:text-red-400
                 transition
-                duration-300
+                ease-in
+                duration-500
               "
-              >comics</a
+              >Introduction</a
             >
-            <a
-              href="#"
-              class="
-                block
-                py-3
-                px-4
-                text-sm text-center
-                hover:bg-gray-200
-                transition
-                duration-300
-              "
-              >novels</a
+            <a href="#" class="block py-3 px-4 text-center hover:bg-gray-200"
+              >Technical Background</a
+            >
+            <a href="#" class="block py-3 px-4 text-center hover:bg-gray-200"
+              >Case Studies</a
+            >
+            <a href="#" class="block py-3 px-4 text-center hover:bg-gray-200"
+              >Services</a
             >
           </div>
         </div>
@@ -140,7 +145,17 @@
         <h2 class="font-extrabold text-3xl text-center">Tailwind Website</h2>
       </div>
     </header>
-    <main class="mx-4 grid grid-cols-4 gap-2 md:grid-cols-8 xl:grid-cols-12">
+
+    <main
+      class="
+        mx-4
+        row-span-2
+        grid grid-cols-4
+        gap-2
+        md:grid-cols-8
+        xl:grid-cols-12
+      "
+    >
       <section class="col-start-1 col-end-5">
         <h2 class="text-2xl text-center py-5">Unsere Glücklichmacher</h2>
         <article class="flex flex-col gap-8">
@@ -183,6 +198,7 @@
           </section>
         </article>
       </section>
+      <img src="./img/man_at_machine_101.webp" alt="" class="max-w-sm">
     </main>
     <script src="./apps/app.js"></script>
   </body>
