@@ -3,5 +3,5 @@ const menu = document.querySelector(".mobile-menu");
 
 btn.addEventListener("click", () => {
 //   menu.classList.add("transition", "ease", "duration-400");
-  menu.classList.toggle("hidden");
+  menu.classList.toggle("-translate-y-full");
 });

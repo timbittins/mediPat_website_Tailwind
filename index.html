@@ -10,10 +10,19 @@
 
   <body class="w-screen grid-rows-2">
     <header>
-      <nav class="bg-gray-100 absolute row-span-1">
+      <nav class="bg-gray-100 absolute w-screen row-span-1">
         <div class="w-screen mx-auto px-4 lg:px-10">
-          <div class="flex justify-between lg:justify-between">
-            <!-- logo -->
+          <div
+            class="
+              flex
+              justify-between
+              lg:justify-between
+              w-screen
+              bg-red-800
+              z-50
+            "
+          >
+            <!-- LOGO -->
             <div>
               <a
                 href="#"
@@ -27,13 +36,14 @@
                 "
               >
                 <img
-                  src="./img/medipad_logo.svg"
-                  alt="medipad logo"
+                  src="./img/medipat_logo.svg"
+                  alt="mediPat logo"
                   class="h-8 md:w-12"
                 />
               </a>
             </div>
-            <!-- primary nav -->
+
+            <!-- NAVIGATION MENU -->
             <div class="flex space-x-10">
               <div class="hidden lg:flex items-center space-x-5">
                 <a
@@ -82,12 +92,13 @@
               </div>
             </div>
 
-            <!-- mobile button -->
+            <!-- MOBILE BUTTON -->
             <div class="flex items-center lg:hidden">
               <button
                 class="
                   mobile-menu-button
-                  border-2 border-blue-500 bg-white
+                  border-2 border-blue-500
+                  bg-white
                   p-1
                   rounded-full
                   md:mr-5
@@ -111,9 +122,17 @@
             </div>
           </div>
 
-          <!-- mobile menu -->
+          <!-- MOBILE MENU -->
           <div
-            class="mobile-menu hidden lg:hidden transition ease-in duration-500"
+            class="
+              mobile-menu
+              bg-white
+              transform
+              -translate-y-full
+              transition-all
+              duration-500
+              z-10
+            "
           >
             <a
               href="#"
@@ -198,7 +217,6 @@
           </section>
         </article>
       </section>
-      <img src="./img/man_at_machine_101.webp" alt="" class="max-w-sm">
     </main>
     <script src="./apps/app.js"></script>
   </body>
