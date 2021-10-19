@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="./tailwind.css" />
   </head>
 
-  <body class="w-screen grid-rows-2">
-    <header>
-      <nav class="bg-gray-100 absolute w-screen row-span-1">
-        <div class="w-screen mx-auto px-4 lg:px-10">
+  <body class="w-screen grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12">
+    <header class="col-start-1 col-end-7 md:col-end-9 lg:col-end-13 lg:grid lg:grid-cols-12 bg-gray-100">
+      <nav class="lg:col-start-2 lg:col-end-12">
+
+         <!-- MAIN NAV BAR -->
           <div
             class="
+              relative
               flex
               justify-between
               lg:justify-between
-              w-screen
-              bg-red-800
-              z-50
+              px-5 md:px-12 lg:px-0
+              bg-gray-100
+              z-30
+              
             "
           >
             <!-- LOGO -->
@@ -30,21 +33,18 @@
                   flex
                   items-center
                   py-5
-                  px-2
-                  text-gray-600
-                  hover:text-black
                 "
               >
                 <img
                   src="./img/medipat_logo.svg"
                   alt="mediPat logo"
-                  class="h-8 md:w-12"
+                  class="h-8 md:h-12"
                 />
               </a>
             </div>
 
             <!-- NAVIGATION MENU -->
-            <div class="flex space-x-10">
+            <div class="flex space-x-10 static z-30">
               <div class="hidden lg:flex items-center space-x-5">
                 <a
                   href="#"
@@ -101,7 +101,6 @@
                   bg-white
                   p-1
                   rounded-full
-                  md:mr-5
                 "
               >
                 <svg
@@ -121,51 +120,59 @@
               </button>
             </div>
           </div>
-
           <!-- MOBILE MENU -->
           <div
             class="
               mobile-menu
+              lg:hidden
+              absolute
+              top-18
+              gap-3
+              w-full
+              py-6
               bg-white
               transform
               -translate-y-full
               transition-all
-              duration-500
-              z-10
+              duration-500 
+              z-0
             "
           >
             <a
               href="#"
               class="
                 block
-                py-3
+                py-4
                 px-4
+                my-2
+                md:text-2xl
                 text-center
-                hover:bg-gray-200 hover:text-red-400
+                hover:bg-gray-200 
+                hover:text-red-400
                 transition
                 ease-in
                 duration-500
               "
               >Introduction</a
             >
-            <a href="#" class="block py-3 px-4 text-center hover:bg-gray-200"
+            <a href="#" class="block py-4 px-4 my-2 md:text-2xl text-center hover:bg-gray-200"
               >Technical Background</a
             >
-            <a href="#" class="block py-3 px-4 text-center hover:bg-gray-200"
+            <a href="#" class="block py-4 px-4 my-2 md:text-2xl text-center hover:bg-gray-200"
               >Case Studies</a
             >
-            <a href="#" class="block py-3 px-4 text-center hover:bg-gray-200"
+            <a href="#" class="block py-4 px-4 my-2 md:text-2xl text-center hover:bg-gray-200"
               >Services</a
             >
           </div>
-        </div>
+       
       </nav>
-      <div class="py-5">
-        <h2 class="font-extrabold text-3xl text-center">Tailwind Website</h2>
-      </div>
     </header>
-
-    <main
+    
+    <main class="col-start-1 col-end-7 md:col-end-9 lg:col-end-13 bg-red-800">
+    <div class="py-5">
+      <h2 class="font-extrabold text-3xl text-center">Tailwind Website</h2>
+    </div
       class="
         mx-4
         row-span-2
