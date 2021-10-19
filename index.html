@@ -50,7 +50,8 @@
                   href="#"
                   class="
                     py-5
-                    px-1
+                    pl-6
+                    text-xl
                     text-gray-600
                     hover:text-black hover:font-bold
                     transition
@@ -63,27 +64,54 @@
                   href="#"
                   class="
                     py-5
-                    px-1
+                    pl-6
+                    text-xl
                     text-gray-600
                     hover:text-black hover:font-bold
                   "
                   >Technical Background</a
                 >
-                <a
-                  href="#"
+                <div
                   class="
-                    py-5
-                    px-1
+                    lg-sub-menu-button 
+                    
+                    cursor-pointer 
+                    text-xl
                     text-gray-600
                     hover:text-black hover:font-bold
+                    bg-red-500
                   "
-                  >Case Studies</a
+                  >
+                  <div class="bg-yellow-500 flex
+                    py-5
+                    pl-6">
+                    Case Studies
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 transform rotate-180" viewBox="0 0 20 20" fill="currentColor">
+                   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                </div>
+              <div class="lg-sub-menu hidden absolute top-20 transform -translate-x-3 flex flex-col justify-center gap-1 p-2 md:text-2xl bg-gray-100">
+                <a href="#" class="block py-4 px-2 text-xl bg-blue-50 bg-opacity-50
+                ">
+                  Survey</a
                 >
+                <a href="#" class="block py-4 px-2 text-xl bg-blue-50 bg-opacity-50
+                  ">
+                    Infrastructure</a
+                >
+                <a href="#" class="block py-4 px-2 text-xl bg-blue-50 bg-opacity-50
+                  ">
+                  Customer Analysis</a
+                >
+            </div>
+                </div>
                 <a
                   href="#"
                   class="
                     py-5
-                    px-1
+                    pl-6
+                    text-xl
                     text-gray-600
                     hover:text-black hover:font-bold
                   "
@@ -129,8 +157,7 @@
               top-18
               gap-3
               w-full
-              py-6
-              bg-white
+              bg-gray-100
               transform
               -translate-y-full
               transition-all
@@ -147,21 +174,53 @@
                 my-2
                 md:text-2xl
                 text-center
-                hover:bg-gray-200 
-                hover:text-red-400
+                bg-blue-50
+                border-2
+                border-blue-200
                 transition
                 ease-in
                 duration-500
               "
               >Introduction</a
             >
-            <a href="#" class="block py-4 px-4 my-2 md:text-2xl text-center hover:bg-gray-200"
+            <a href="#" class="block py-4 px-4 my-2 md:text-2xl text-center bg-blue-50
+                border-2
+                border-blue-200 hover:bg-gray-200"
               >Technical Background</a
             >
-            <a href="#" class="block py-4 px-4 my-2 md:text-2xl text-center hover:bg-gray-200"
-              >Case Studies</a
+
+            <div class="mobile-sub-menu-button flex justify-center items-center gap-3 py-4 px-4 my-2 md:text-2xl text-center bg-blue-50 border-2 border-blue-200 hover:bg-gray-200">
+              Case Studies
+              <div class="">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 transform rotate-180" viewBox="0 0 20 20" fill="currentColor">
+                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+              </div>
+              </div>
+
+            <div class="mobile-sub-menu hidden flex flex-col justify-center items-center gap-1 py-1 px-1 md:text-2xl text-center bg-gray-100">
+              <a href="#" class="block w-10/12 py-4 px-2 md:text-2xl text-center bg-blue-50 bg-opacity-50
+                border-2
+                border-blue-200"
+              >Survey</a
             >
-            <a href="#" class="block py-4 px-4 my-2 md:text-2xl text-center hover:bg-gray-200"
+            <a href="#" class="block w-10/12 py-4 px-2 md:text-2xl text-center bg-blue-50 bg-opacity-50
+                border-2
+                border-blue-200"
+              >Infrastructure</a
+            >
+            <a href="#" class="block w-10/12 py-4 px-2 md:text-2xl text-center bg-blue-50 bg-opacity-50
+                border-2
+                border-blue-200"
+              >Customer Analysis</a
+            >
+            </div>
+
+
+
+            <a href="#" class="block py-4 px-4 mt-2 md:text-2xl text-center bg-blue-50
+                border-2
+                border-blue-200 hover:bg-gray-200"
               >Services</a
             >
           </div>
@@ -169,22 +228,17 @@
       </nav>
     </header>
     
-    <main class="col-start-1 col-end-7 md:col-end-9 lg:col-end-13 bg-red-800">
-    <div class="py-5">
-      <h2 class="font-extrabold text-3xl text-center">Tailwind Website</h2>
-    </div
-      class="
-        mx-4
-        row-span-2
-        grid grid-cols-4
-        gap-2
-        md:grid-cols-8
-        xl:grid-cols-12
-      "
-    >
-      <section class="col-start-1 col-end-5">
-        <h2 class="text-2xl text-center py-5">Unsere Glücklichmacher</h2>
-        <article class="flex flex-col gap-8">
+    <main class="col-start-1 col-end-7 md:col-end-9 lg:col-end-13 grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12">
+    <div class="mt-10 col-start-2 col-end-6">
+      <h2 class="text-3xl font-extrabold text-center">mediPat Corp.</h2>
+      </div>
+      <img class="col-start-1 col-end-7 mt-5" src="./img/doctor_patient_101.webp" alt="doctor visits patient on bed">
+      
+
+      <section class="col-start-2 col-end-6 mt-8">
+        <h2 class=text-2xl font-bold pt-8">Welcome</h2>
+        <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum adipisci omnis dolorem nisi, error quae culpa exercitationem, nihil ab molestias beatae, mollitia vel eaque dolorum?</p>
+        <article class="flex flex-col gap-8 pt-8">
           <section
             class="
               h-80
@@ -222,6 +276,7 @@
               </p>
             </div>
           </section>
+
         </article>
       </section>
     </main>
