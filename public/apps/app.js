@@ -22,6 +22,7 @@ const mobileSubmenuFunction = () => {
 
   mobileSubmenuBtn.addEventListener("click", () => {
     mobileSubmenu.classList.toggle("hidden");
+    mobileSubmenu.classList.toggle("flex");
     mobileSubmenuBtnArrow.classList.toggle("rotate-180");
     console.log("submenu active");
   });
@@ -45,6 +46,22 @@ const lgSubmenuFunction = () => {
   });
 };
 
+function highlightCurrentPage() {
+  const currentPageName = () => {
+    const currentPagePath = window.location.pathname;
+    const currentPageName = currentPagePath.split("/").pop().split(".").shift();
+    return currentPageName;
+  }
+  const menuLinkList = [...document.querySelectorAll("a")];
+
+  menuLinkList.forEach((menuLink) => {
+    if (menuLink.id === currentPageName()) {
+      menuLink.classList.add("text-blue-500", "border-b-4", "border-blue-500");
+    }
+  });
+}
+
 mobileMenuFunction();
 mobileSubmenuFunction();
 lgSubmenuFunction();
+highlightCurrentPage();

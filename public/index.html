@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./apps/style.css" />
   </head>
 
-  <body class="w-screen">
+  <body>
     <header class="fixed w-full z-50">
       <nav class="flex flex-col h-screen lg:h-auto">
         <!-- MAIN NAV BAR -->
@@ -27,54 +27,112 @@
           "
         >
           <!-- LOGO -->
-          <div>
-            <a href="./index.html" class="flex items-center">
-              <img
-                src="./img/medipat_logo.svg"
-                alt="mediPat logo"
-                class="h-8 md:h-12"
-              />
-            </a>
-          </div>
+          <a href="./index.html" class="flex items-center">
+            <img
+              src="./img/medipat_logo.svg"
+              alt="mediPat logo"
+              class="h-8 md:h-12"
+            />
+          </a>
 
           <!-- NAVIGATION MENU -->
           <div class="flex static z-30">
             <div class="hidden lg:flex gap-3 items-center">
-              <a
-                href="./index.html"
-                class="
-                  py-3
-                  px-2
-                  text-3xl
-                  text-brand 
-                "
+              <div class="group overflow-hidden">
+                <a
+                  href="./index.html"
+                  id="index"
+                  class="
+                    text-xl
+                    font-medium
+                    hover:text-blue-700
+                    transition
+                    duration-300
+                    ease-in-out
+                  "
                 >
-                <p class="">Hosme</p>
-                </a
-              >
+                  Home
+                  <div
+                    class="
+                      w-full
+                      h-1
+                      bg-blue-700
+                      active:bg-brand
+                      transform
+                      -translate-x-full
+                      group-hover:translate-x-0
+                      transition
+                      duration-300
+                      ease-in-out
+                    "
+                  ></div>
+                </a>
+              </div>
 
-              <a
-                href="./pages/introduction.html"
-                class="py-3 px-2 text-xl text-gray-600"
-                >Introduction</a
-              >
+              <div class="ml-3 group overflow-hidden">
+                <a
+                  href="./pages/introduction.html"
+                  id="introduction"
+                  class="
+                    text-xl
+                    font-medium
+                    hover:text-blue-700
+                    transition
+                    duration-300
+                    ease-in-out
+                  "
+                >
+                  Introduction
+                  <div
+                    class="
+                      w-full
+                      h-1
+                      bg-blue-700
+                      transform
+                      -translate-x-full
+                      group-hover:translate-x-0
+                      transition
+                      duration-300
+                      ease-in-out
+                    "
+                  ></div>
+                </a>
+              </div>
 
-              <a
-                href="./pages/technicalbackground.html"
-                class="py-3 px-2 text-xl text-gray-600"
-                >Technical Background</a
-              >
+              <div class="ml-3 group overflow-hidden">
+                <a
+                  href="./pages/technicalbackground.html"
+                  id="technicalbackground"
+                  class="
+                    text-xl
+                    font-medium
+                    hover:text-blue-700
+                    transition
+                    duration-300
+                    ease-in-out
+                  "
+                >
+                  Technical Background
+                  <div
+                    class="
+                      w-full
+                      h-1
+                      bg-blue-700
+                      transform
+                      -translate-x-full
+                      group-hover:translate-x-0
+                      transition
+                      duration-300
+                      ease-in-out
+                    "
+                  ></div>
+                </a>
+              </div>
 
               <div
-                class="
-                  lg-sub-menu-button
-                  py-3
-                  px-2
-                  lg:cursor-default
-                  text-xl text-gray-600
-                "
+                class="lg-sub-menu-button py-3 px-2 lg:cursor-default text-xl"
               >
-                <div class="flex">
+                <div class="flex font-medium">
                   Case Studies
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -106,32 +164,130 @@
                     bg-gray-100
                   "
                 >
-                  <a
-                    href="./pages/survey.html"
-                    class="block px-2 text-xl bg-blue-50 bg-opacity-50"
-                  >
-                    Survey</a
-                  >
-                  <a
-                    href="./pages/infrastructure.html"
-                    class="block px-2 text-xl bg-blue-50 bg-opacity-50"
-                  >
-                    Infrastructure</a
-                  >
-                  <a
-                    href="./pages/customeranalysis.html"
-                    class="block px-2 text-xl bg-blue-50 bg-opacity-50"
-                  >
-                    Customer Analysis</a
-                  >
+                  <div class="ml-3 group overflow-hidden w-max">
+                    <a
+                      href="./pages/survey.html"
+                      id="survey"
+                      class="
+                        inline-block
+                        text-xl
+                        font-medium
+                        hover:text-blue-700
+                        transition
+                        duration-300
+                        ease-in-out
+                      "
+                    >
+                      Survey
+                      <div
+                        class="
+                          w-full
+                          h-1
+                          bg-blue-700
+                          transform
+                          -translate-x-full
+                          group-hover:translate-x-0
+                          transition
+                          duration-300
+                          ease-in-out
+                        "
+                      ></div>
+                    </a>
+                  </div>
+
+                  <div class="ml-3 group overflow-hidden w-max">
+                    <a
+                      href="./pages/infrastructure.html"
+                      id="infrastructure"
+                      class="
+                        inline-block
+                        text-xl
+                        font-medium
+                        hover:text-blue-700
+                        transition
+                        duration-300
+                        ease-in-out
+                      "
+                    >
+                      Infrastructure
+                      <div
+                        class="
+                          w-full
+                          h-1
+                          bg-blue-700
+                          transform
+                          -translate-x-full
+                          group-hover:translate-x-0
+                          transition
+                          duration-300
+                          ease-in-out
+                        "
+                      ></div>
+                    </a>
+                  </div>
+
+                  <div class="ml-3 group overflow-hidden w-max">
+                    <a
+                      href="./pages/customeranalysis.html"
+                      id="customeranalysis"
+                      class="
+                        inline-block
+                        text-xl
+                        font-medium
+                        hover:text-blue-700
+                        transition
+                        duration-300
+                        ease-in-out
+                      "
+                    >
+                      Customer Analysis
+                      <div
+                        class="
+                          w-full
+                          h-1
+                          bg-blue-700
+                          transform
+                          -translate-x-full
+                          group-hover:translate-x-0
+                          transition
+                          duration-300
+                          ease-in-out
+                        "
+                      ></div>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <a
-                href="./pages/services.html"
-                class="py-3 px-2 text-xl text-gray-600"
-              >
-                Services
-              </a>
+
+              <div class="ml-3 group overflow-hidden">
+                <a
+                  href="./pages/services.html"
+                  id="services"
+                  class="
+                    text-xl
+                    font-medium
+                    hover:text-blue-700
+                    transition
+                    duration-300
+                    ease-in-out
+                  "
+                >
+                  Services
+                  <div
+                    class="
+                      w-full
+                      h-1
+                      bg-blue-700
+                      transform
+                      -translate-x-full
+                      group-hover:translate-x-0
+                      transition
+                      duration-300
+                      ease-in-out
+                    "
+                  ></div>
+                </a>
+              </div>
 
               <div></div>
             </div>
@@ -218,6 +374,7 @@
             justify-between
             w-full
             h-full
+            overflow-y-scroll
             bg-gray-100
             transform
             translate-x-full
@@ -229,6 +386,7 @@
           <div>
             <a
               href="./index.html"
+              id="index"
               class="
                 block
                 py-4
@@ -237,6 +395,7 @@
                 md:text-2xl
                 text-center
                 bg-blue-50
+                active:bg-red-500
                 border-2 border-blue-200
                 transition
                 ease-in
@@ -315,7 +474,7 @@
               class="
                 mobile-sub-menu
                 hidden
-                flex flex-col
+                flex-col
                 justify-center
                 items-center
                 gap-1
@@ -393,7 +552,7 @@
           <div class="flex flex-col gap-2">
             <div class="flex justify-between gap-2">
               <a
-                href="./pages/contact.html"
+                href="./pages/contact.html" id="contact"
                 class="
                   block
                   w-3/6
@@ -408,7 +567,7 @@
                 >Contact</a
               >
               <a
-                href="./pages/impressum.html"
+                href="./pages/impressum.html" id="impressum"
                 class="
                   block
                   w-3/6
@@ -432,66 +591,39 @@
     </header>
 
     <main
-      class="relative top-16 grid grid-cols-6 md:grid-cols-8 lg:grid-cols-12"
+      class="
+        relative
+        top-20
+        grid grid-cols-5
+        md:grid-cols-8
+        lg:grid-cols-12
+        mx-4
+        md:mx-0
+      "
     >
-      <div class="col-start-2 col-end-6 mt-10 mb-5">
-        <h1 class="text-3xl font-extrabold text-center">mediPat Inc.</h1>
-        <hr class="my-3 bg-blue-500" />
-        <h3 class="text-xl text-center">Solutions for a better life</h3>
+      <div class="col-start-1 col-end-6 md:col-end-9 lg:col-end-13 mt-8 md:mt-16">
+        <h1
+          class="
+            text-3xl
+            md:text-5xl
+            lg:text-6xl
+            font-bold
+            text-center text-blue-500
+          "
+        >
+          mediPat Inc.
+        </h1>
+        <hr class="my-3 md:my-6 mx-auto w-10/12 md:w-6/12 h-0.5 bg-blue-700" />
+        <h3 class="text-xl md:text-3xl  text-center text-blue-500">
+          Solutions for a better life
+        </h3>
       </div>
-      <img
-        class="col-start-1 col-end-7 w-full mt-5"
-        src="./img/doctor_patient_101.webp"
-        alt="doctor visits patient on bed"
-      />
 
-      <section class="col-start-2 col-end-6 mt-8">
-        <h2 class="text-2xl font-bold pt-8">Welcome</h2>
-        <p class="mt-2">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum adipisci
-          omnis dolorem nisi, error quae culpa exercitationem, nihil ab
-          molestias beatae, mollitia vel eaque dolorum?
-        </p>
-        <article class="flex flex-col gap-8 pt-8">
-          <section
-            class="
-              h-80
-              border-2 border-solid border-gray-900
-              rounded-2xl
-              flex flex-col
-              overflow-hidden
-            "
-          >
-            <div class="h-2/3 bg-green-700"></div>
-            <div class="w-auto h-1/3 bg-green-300 py-2 px-5">
-              <h2 class="text-2xl font-medium mb-1">This is a card</h2>
-              <p>
-                This is some text inside of the card to show how to seperate it
-                all.
-              </p>
-            </div>
-          </section>
-
-          <section
-            class="
-              h-80
-              border-2 border-solid border-gray-900
-              rounded-2xl
-              flex flex-col
-              overflow-hidden
-            "
-          >
-            <div class="h-2/3 bg-green-700"></div>
-            <div class="w-auto h-1/3 bg-green-300 py-2 px-5">
-              <h2 class="text-2xl font-medium mb-1">This is a card</h2>
-              <p>
-                This is some text inside of the card to show how to seperate it
-                all.
-              </p>
-            </div>
-          </section>
-        </article>
-      </section>
+      <div class="col-start-1 md:col-start-2 lg:col-start-4 col-end-6 md:col-end-8 lg:col-end-10 mt-16 h-screen">
+        <p class="text-xl md:text-2xl">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet.
+          </p>
+      </div>
     </main>
 
     <footer
@@ -510,19 +642,68 @@
         <p>mediPat ©2021 @TimBittins</p>
       </div>
 
-      <div class="flex gap-8 px-10">
-        <a
-          href="./pages/contact.html"
-          class="block py-2 px-5 md:text-xl text-center"
-        >
-          Contact
-        </a>
-        <a
-          href="./pages/impressum.html"
-          class="block py-2 px-5 md:text-xl text-center"
-        >
-          Impressum
-        </a>
+      <div class="flex gap-8 px-10 py-3">
+        <div class="group overflow-hidden">
+          <a
+            href="./pages/contact.html"
+            id="contact"
+            class="
+              text-xl
+              font-medium
+              hover:text-blue-700
+              transition
+              duration-300
+              ease-in-out
+            "
+          >
+            Contact
+            <div
+              class="
+                w-full
+                h-1
+                bg-blue-700
+                active:bg-brand
+                transform
+                -translate-x-full
+                group-hover:translate-x-0
+                transition
+                duration-300
+                ease-in-out
+              "
+            ></div>
+          </a>
+        </div>
+
+        <div class="group overflow-hidden">
+          <a
+            href="./pages/impressum.html"
+            id="impressum"
+            class="
+              text-xl
+              font-medium
+              hover:text-blue-700
+              transition
+              duration-300
+              ease-in-out
+            "
+          >
+            Impressum
+            <div
+              class="
+                w-full
+                h-1
+                bg-blue-700
+                active:bg-brand
+                transform
+                -translate-x-full
+                group-hover:translate-x-0
+                transition
+                duration-300
+                ease-in-out
+              "
+            ></div>
+          </a>
+        </div>
       </div>
     </footer>
 
